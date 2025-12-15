@@ -4,4 +4,4 @@ require "user.core.keymaps"
 require "user.core.colorscheme"
 
 -- plugin manager
-
+require "user.lazy"
