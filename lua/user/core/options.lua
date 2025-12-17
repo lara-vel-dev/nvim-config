@@ -24,8 +24,8 @@ local options = {
     incsearch = true, -- show matches while typing
 
     -- scrolling & navigation
-    scrolloff = 8, -- keeps cursor away from screen edges vertically
-    sidescrolloff = 8, -- same as "scrolloff" but horizontally
+   scrolloff = 8, -- keeps cursor away from screen edges vertically
+   sidescrolloff = 8, -- same as "scrolloff" but horizontally
 
     -- clipboard & registers
     clipboard = "unnamedplus", -- uses system clipboard
@@ -50,6 +50,7 @@ local options = {
     termguicolors = true, -- enables 24-bit RGB colors
     background = "dark", -- default dark theme and optimizes colors
     signcolumn = "yes", -- always show sign column
+    showmode = false, -- hides mode
 
     -- file handling & encoding
     hidden = true, -- allows switching buffers without saving
