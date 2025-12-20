@@ -11,18 +11,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- correct mappin?
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 -- setup lazy.nvim
-require("lazy").setup({
-    spec = {
-        -- import plugins
-        {"LazyVim/LazyVim", import = "user.plugins" },
-	    {import = "user.plugins.languages"},
+require("lazy").setup("user.plugins", {
+    checker = {
+        enabled = true,
+        notify = false,
     },
-
-    -- automatically check for plugin updates
-    checker = { enabled = false }
+    change_detection = {
+        notify = false,
+    }
 })
