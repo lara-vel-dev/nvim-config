@@ -9,6 +9,7 @@ return {
 
     ensure_installed = {
       "go",
+      "python",
       "c",
       "cpp",
       "c_sharp",

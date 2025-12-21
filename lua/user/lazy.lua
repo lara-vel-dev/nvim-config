@@ -12,12 +12,16 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- setup lazy.nvim
-require("lazy").setup("user.plugins", {
+require("lazy").setup({
+    spec = {
+        { import = "user.plugins" },
+        { import = "user.plugins.lsp" },
+    },
     checker = {
-        enabled = true,
+        enable = true,
         notify = false,
     },
     change_detection = {
         notify = false,
-    }
+    },
 })
