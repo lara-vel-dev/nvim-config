@@ -18,7 +18,7 @@ return {
         "eslint",
 
         -- backend
-        "gopls",          
+        "gopls",
         "pyright",        
         "solargraph",     
         "clangd",         
