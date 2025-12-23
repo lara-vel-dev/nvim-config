@@ -35,9 +35,8 @@ km.set("n", "n", "nzzzv", { desc = "Center the next search match and ensures itâ
 
 km.set("n", "<leader>lw", ":set wrap!<CR>", { desc = "Wrap a very long line" })
 
--- Indentation 
+-- Indentation
 km.set("v", "<", "<gv", { desc = "Stay in visual mode after identation" })
 km.set("v", ">", ">gv", { desc = "Stay in visual mode after identation" })
 
 km.set("v", "p", "_dp", { desc = "Keep last yanked when pasting" })
-
