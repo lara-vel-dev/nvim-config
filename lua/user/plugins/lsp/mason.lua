@@ -19,17 +19,17 @@ return {
 
         -- backend
         "gopls",
-        "pyright",        
-        "solargraph",     
-        "clangd",         
-        "csharp_ls",      
-        "jdtls",          
-        "rust_analyzer",  
-        "lua_ls",         
-        "bashls",         
-        "dockerls",       
-        "yamlls",         
-        "jsonls",         
+        "pyright",
+        "solargraph",
+        "clangd",
+        "csharp_ls",
+        "jdtls",
+        "rust_analyzer",
+        "lua_ls",
+        "bashls",
+        "dockerls",
+        "yamlls",
+        "jsonls",
         "sqlls",
       },
     },
@@ -53,10 +53,10 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     opts = {
       ensure_installed = {
-        "prettier", 
+        "prettier",
         "stylua",
-        "isort", 
-        "black", 
+        "isort",
+        "black",
         "pylint",
         "eslint_d",
         "goimports",
@@ -67,9 +67,6 @@ return {
         "shfmt",
 
       },
-    },
-    dependencies = {
-      "williamboman/mason.nvim",
     },
   },
 }
