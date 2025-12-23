@@ -1,10 +1,17 @@
 return {
 	"barrett-ruth/live-server.nvim",
 	config = function()
-		require("live-server").setup()
+		opts = {
+			cmd = { "LiveServerStart", "LiveServerStop" },
+			config = true,
+			args = { "--port=8080" },
+		}
+		require("live-server").setup(opts)
 
-		vim.keymap.set("n", "<leader>ls", function()
-			require("live-server").start()
-		end, { desc = "Start live server" })
+		-- keymaps
+		local km = vim.keymap
+
+		km.set("n", "<leader>ls", ":LiveServerStart<CR>", { desc = "Start live server" })
+		km.set("n", "<leader>lq", ":LiveServerStop<CR>", { desc = "Stop live server" })
 	end,
 }
